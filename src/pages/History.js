@@ -1,10 +1,15 @@
 import React from "react";
 import Header from "../MyComponents/Header";
+import HistoryCss from "../css/history.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "../MyComponents/Footer";
 function History(){
     return(
         <>
         <Header />
-        <table class="table">
+        <div className="container">
+          <h1 className="text-center mt-5">History</h1>
+        <table className="table mt-5">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Serial No</th>
@@ -12,8 +17,7 @@ function History(){
       <th scope="col">Short URL</th>
       <th scope="col">Expiry Date</th>
       <th scope="col">Status</th>
-      <th scope="col">Update</th>
-      <th scope="col">Delete</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -23,13 +27,13 @@ function History(){
       <td>Otto</td>
       <td>@mdo</td>
       <td></td>
-      <td></td>
-      <td></td>
+
     </tr>
   </tbody>
 </table>
 
-        
+</div>    
+<Footer/>
         </>
 
     )
