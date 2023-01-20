@@ -1,7 +1,9 @@
 import React from "react";
+import Header from "../MyComponents/Header";
 function History(){
     return(
         <>
+        <Header />
         <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -31,5 +33,5 @@ function History(){
         </>
 
     )
-}
+};
 export default History

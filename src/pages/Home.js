@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from '../MyComponents/Header';
 
 export const Home = () => {
   return (
     <>
+        <Header />
        <div className="container ">
         <h1 className="text-center">Paste the URL to be shortened</h1>
         <div className="row">
@@ -18,4 +20,5 @@ export const Home = () => {
     
     </>
   )
-}
+};
+export default Home
