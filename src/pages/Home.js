@@ -2,7 +2,9 @@ import React from 'react'
 import Header from '../MyComponents/Header';
 import HomeCSS from "../css/Home.css";
 import Footer from '../MyComponents/Footer';
+import { useState } from 'react';
 export const Home = () => {
+  const [userInput, setUserInput] = useState("");
   return (
     <>
         <Header />
@@ -12,7 +14,9 @@ export const Home = () => {
         <div className="col-lg-6 mx-auto">
         <form className="mt-5">
         <div  className='mb-2'>
-        <input className="form-control " type="text" placeholder="Enter link here" />
+        <input className="form-control " type="text"
+         value={userInput}onChange={(e)=>{setUserInput(e.target.value)}}
+          placeholder="Enter link here" />
         </div>
         </form>
         <div className='mb-3'>
