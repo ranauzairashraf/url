@@ -23,9 +23,10 @@ function History(){
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>{localStorage.getItem("oLink") ? localStorage.getItem("oLink") :NAN} </td>
+      <td>{localStorage.getItem("sUrl") ? localStorage.getItem("sUrl") :NAN}</td>
+      <td>{localStorage.getItem("date") ? localStorage.getItem("date") :NAN}</td>
+      
       <td></td>
 
     </tr>
